@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="adefault.subat22.MainActivity">
+
+    <TextView
+        android:text="1.sayı"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="54dp"
+        android:layout_marginTop="57dp"
+        android:id="@+id/textView" />
+
+    <TextView
+        android:text="2.sayı"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView2"
+        android:layout_below="@+id/textView"
+        android:layout_alignStart="@+id/textView"
+        android:layout_marginTop="56dp" />
+
+    <TextView
+        android:text="sonuc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewsonuc"
+        android:layout_below="@+id/textView2"
+        android:layout_alignEnd="@+id/textView2"
+        android:layout_marginTop="64dp"
+        android:textSize="36sp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="41dp"
+        android:id="@+id/txtsayi1" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:layout_below="@+id/txtsayi1"
+        android:layout_alignEnd="@+id/txtsayi1"
+        android:layout_marginTop="29dp"
+        android:id="@+id/txtsayi2" />
+
+    <Button
+        android:text="-"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnCıkar"
+        android:layout_alignBaseline="@+id/btntopla"
+        android:layout_alignBottom="@+id/btntopla"
+        android:layout_toStartOf="@+id/btnCarp" />
+
+    <Button
+        android:text="*"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnCarp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/btntopla"
+        android:layout_marginBottom="19dp" />
+
+    <Button
+        android:text="+"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btntopla"
+        android:layout_above="@+id/btnCarp"
+        android:layout_alignStart="@+id/txtsayi2"
+        android:layout_marginStart="46dp"
+        android:layout_marginBottom="29dp" />
+
+    <Button
+        android:text="/"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/btnCarp"
+        android:layout_alignStart="@+id/textView2"
+        android:id="@+id/btnBol" />
+</RelativeLayout>
